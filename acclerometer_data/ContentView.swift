@@ -7,16 +7,19 @@
 
 import SwiftUI
 
-struct ContentView: View {
+struct ContentView:View {
+    @ObservedObject var counter = acc()
+    
     var body: some View {
+       
+        
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundColor(.accentColor)
-            Text("Hello, world!")
+            Label("p", systemImage: "42.circle")
+            Text("t\(counter.dd)")
         }
-        .padding()
+       
     }
+    
 }
 
 struct ContentView_Previews: PreviewProvider {

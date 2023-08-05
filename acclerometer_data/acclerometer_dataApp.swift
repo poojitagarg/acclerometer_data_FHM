@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import CoreMotion
 
 @main
 struct acclerometer_dataApp: App {
@@ -14,4 +15,7 @@ struct acclerometer_dataApp: App {
             ContentView()
         }
     }
-}
+    
+
+    }
+
